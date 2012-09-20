@@ -1,0 +1,6 @@
+*.6
+_obj
+6.out
+_testmain.go
+_test
+
