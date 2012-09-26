@@ -22,7 +22,7 @@ func pluralize(singular string, count int32) string {
 	return fmt.Sprintf("%ss", singular)
 }
 
-func mailto(email string) string {
+func mailto(email string) template.HTML {
 	pre := `<script type="text/javascript">eval(decodeURIComponent('`
 	post := `'))</script>`
 	inner := fmt.Sprintf("document.write('<a href=\"mailto:%s\">%s</a>');", email, email)
@@ -30,7 +30,7 @@ func mailto(email string) string {
 	for _, v := range inner {
 		pieces = append(pieces, fmt.Sprintf("%%%x", v))
 	}
-	return pre + strings.Join(pieces, "") + post
+	return template.HTML(pre + strings.Join(pieces, "") + post)
 }
 
 func simpleFormat(in string) template.HTML {
