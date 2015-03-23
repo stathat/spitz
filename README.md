@@ -21,4 +21,4 @@ line: [@stathat](http://twitter.com/stathat) or [contact us here](http://www.sta
 About
 -----
 
-Written by Patrick Crosby at [StatHat](http://www.stathat.com).  Twitter:  [@stat_hat](http://twitter.com/stat_hat)
+Written by Patrick Crosby at [StatHat](http://www.stathat.com).  Twitter:  [@stathat](http://twitter.com/stathat)
